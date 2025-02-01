@@ -1,0 +1,77 @@
+.AddModalMainWrapper {
+  * {
+    font-family: Oswald;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+
+    h2 {
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 51.87px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: #0796EF;
+      font-family: Oswald;
+      font-weight: 600;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin-top: 15px;
+  }
+
+  .cancel-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald;
+  }
+
+  .submit-btn {
+    background: #0796EF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald;
+  }
+}

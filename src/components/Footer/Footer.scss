@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kelly+Slab&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.FooterMainWrapper {
+    .footer-top {
+        width: 100%;
+        background-color: black;
+        padding: 3rem;
+
+        .contact-cards-wrapper {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .cardOne {
+                order: 1;
+            }
+
+            .cardTwo {
+                order: 2;
+            }
+
+            .cardThree {
+                order: 3;
+            }
+
+            .contact-card {
+                width: 373px;
+                height: 134px;
+                border-radius: 15px;
+                border: 1px solid #FFFFFF;
+                padding: 1.5rem;
+
+                h5 {
+                    font-family: Oswald;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 23.71px;
+                    letter-spacing: 0.03em;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #0796EF;
+                    text-transform: uppercase;
+                }
+
+                .mail-number {
+                    text-align: center;
+
+                    img {
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        font-family: Oswald;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 23.71px;
+                        letter-spacing: 0.03em;
+                        color: #857878;
+                    }
+                }
+            }
+
+            .cardTwo {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                img {
+                    position: absolute;
+                    top: -2.3rem;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+
+                h3 {
+                    font-family: Oswald;
+                    font-size: 35px;
+                    font-weight: 400;
+                    line-height: 51.87px;
+                    letter-spacing: 0.03em;
+                    text-align: center;
+                    color: #0796EF;
+                }
+
+                .second-word {
+                    color: white;
+                }
+
+                .third-word {
+                    color: #857878;
+                }
+
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .icon {
+                        font-size: 13px;
+                        color: #808080;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        height: auto;
+        padding: 1rem;
+        background-color: #1e1e1e;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #857878;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.8px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+        .footer-bottom-right {
+            display: flex;
+            gap: 1rem;
+
+        }
+    }
+
+    @media(max-width:768px) {
+        .cardOne {
+            order: 2 !important;
+        }
+
+        .cardTwo {
+            order: 1 !important;
+
+            img {
+                width: 80px;
+            }
+
+            h3 {
+                font-size: 30px !important;
+            }
+        }
+
+        .cardThree {
+            order: 3;
+        }
+    }
+}

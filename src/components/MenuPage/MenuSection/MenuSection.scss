@@ -1,0 +1,229 @@
+
+.MenuSectionMainWrapper {
+    .loading{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 999999;
+    }
+    .menu-section {
+        .main-menu-listing-section {
+            width: 100%;
+            min-height: 80px;
+            background-image: url('/Images/main-menu-bg.png');
+            background-size: cover;
+
+            .menu-card-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                min-height: 80px;
+                gap: 1rem;
+                padding: 10px;
+            }
+
+            .menu-card {
+                width: 114px;
+                height: 50px;
+                border: 1px solid #0796EF;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Oswald;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 23.71px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                &.active {
+                    background-color: #0066ff; // Blue color
+                    color: white; // Making text white for better contrast
+                  }
+                  
+                  &:hover {
+                    opacity: 0.9;
+                  }
+            }
+
+        }
+
+        .menu-items-card-wrapper {
+            width: 100%;
+            background-image: url('/Images/menu-card-bg.png');
+            background-size: cover;
+            position: relative;
+            padding: 8rem 3rem;
+
+            .left-image {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 120px;
+                height: 90%;
+            }
+
+            .right-image {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 120px;
+                height: 90%;
+            }
+
+            .menuItems-card {
+                width: 80%;
+                border: 1px solid #FFFFFF;
+                margin: auto;
+                padding: 3rem;
+                padding-bottom: 10rem;
+                position: relative;
+
+                .juice-image {
+                    position: absolute;
+                    right: 0;
+                    bottom: -2rem;
+                }
+
+                .coktail-image {
+                    position: absolute;
+                    left: -3.5rem;
+                    top: -8rem;
+                }
+
+                .menu-description {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .line {
+                        border-bottom: 3px solid #857878;
+                        width: 68px;
+                    }
+
+                    h2 {
+                        font-family: Oswald;
+                        font-size: 50px;
+                        font-weight: 600;
+                        line-height: 50.15px;
+                        letter-spacing: 0.03em;
+                        color: #ffff;
+                        filter: drop-shadow(5px 2px 0px #800020);
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+                .items-list{
+                    padding-top: 4rem;
+                }
+                .item {
+                    margin-bottom: 2rem;
+                    .item-name-price {
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+
+                        .item-name,
+                        .price {
+                            font-family: Oswald;
+                            font-size: 26px;
+                            font-weight: 400;
+                            line-height: 38.53px;
+                            letter-spacing: 0.03em;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: white;
+                            padding-bottom: 0 !important;
+                            margin-bottom: 0 !important;
+                        }
+
+                        .dots {
+                            flex-grow: 1;
+                            border-bottom: 2px dashed white;
+                            margin: 6px 5px;
+                        }
+                    }
+
+                    .description {
+                        font-family: Kelly Slab;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21.82px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #ffffff68;
+;
+                    }
+                }
+
+
+            }
+        }
+    }
+    @media(max-width:768px){
+        .menu-card {
+            width: 80px !important;
+            height: 40px !important;
+        }
+        .left-image,.right-image {
+            display: none !important;
+        }
+        .menu-items-card-wrapper {
+            padding: 1rem !important;
+            .juice-image {
+                bottom: 0 !important;
+                width: 76px !important;
+                
+            }
+
+            .coktail-image {
+                position: absolute;
+                top: -1rem !important;
+                width: 76px !important;
+                left: -10px !important;
+            }
+        }
+        .menuItems-card {
+            width: 97% !important;
+            padding-bottom: 1 !important;
+            padding: 1rem !important;
+            .menu-description {
+                gap: 10px !important;
+                padding: 0 2rem;
+
+                h2 {
+                    font-size: 30px !important;
+                    line-height: 35.15px !important;
+                    text-align: center !important;
+                }
+            }
+            .item {
+                margin-bottom: 2rem;
+                .item-name-price {
+                    .item-name,
+                    .price {
+                        font-size: 16px !important;
+                        line-height: 28.53px !important;
+                    }
+
+                }
+                .description {
+                    font-size: 12px !important;
+                    line-height: 15.82px !important;
+                }
+            }
+        }
+      
+    }
+}
